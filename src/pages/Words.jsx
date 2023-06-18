@@ -3,6 +3,9 @@ import Header from "../components/Header";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAlignCenter, faSearch } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../components/Footer";
+
+import './../assets/css/words.css'
 
 const URL = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
@@ -171,6 +174,18 @@ const Words = () => {
           </div>
         </div>
       </div>
+      
+      {data.length<1?
+        <>
+          <div className="footerBottom">
+            <Footer />
+          </div>
+        </>
+        :
+        <>
+          <Footer />
+        </>
+      }
     </>
   );
 };

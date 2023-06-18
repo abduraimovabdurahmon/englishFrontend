@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [api, setApi] = useState([]);
@@ -31,6 +32,7 @@ const Home = () => {
         <>
           <Header route = "home"/>
           <Sidebar api={api} />
+          <Footer />
         </>
       )}
     </>

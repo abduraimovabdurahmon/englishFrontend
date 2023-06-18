@@ -6,6 +6,7 @@ import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 import englishAlphabet from "./englishAlphabet";
+import Footer from "../components/Footer";
 
 const Alphabet = () => {
   return (
@@ -93,6 +94,8 @@ const Alphabet = () => {
           </div>
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 };
